@@ -5,7 +5,7 @@ A self-hosted replacement for https://segment.com/.
 ## Project Goals
 
   - Compatability with existing analytics clients
-  - Simplicity to for reliability
+  - Simplicity for reliability and easy maintenance
   - Performance for low cost and easy scaling
   - The only destination is S3 as Parquet
 

@@ -1,4 +1,4 @@
-module graceful-shutdown
+module segmate
 
 go 1.18
 

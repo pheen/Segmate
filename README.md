@@ -15,7 +15,7 @@ A self-hosted replacement for https://segment.com/.
 
 An incoming connection is given to one of the listeners by the kernel, then it does some lightweight verification of the request to accept/reject before copying the body to a different dedicated socket. It then returns success to the client.
 
-There is a dedicated socket per type to support pre-allocating buffers. A dedicated worker listens to each of these interally used sockets and aggregates the data. It aggregates the data in a buffer until 5mb worth is received or a time limit is reached, then it writes it to S3.
+There is a dedicated socket per type to support pre-allocating buffers. A dedicated worker listens to each of these interally used sockets. It aggregates the data in a buffer until 5mb worth is received or a time limit is reached, then it writes it to S3.
 
 ```mermaid
 graph TD
